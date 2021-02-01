@@ -6,7 +6,7 @@ import java.util.Objects;
 
 /**
  * 给你一个字符串 s，找到 s 中最长的回文子串。
- *
+ * <p>
  * 示例 1：
  * 输入：s = "babad"
  * 输出："bab"
@@ -20,7 +20,7 @@ import java.util.Objects;
  * 示例 4：
  * 输入：s = "ac"
  * 输出："a"
- *
+ * <p>
  * 来源：力扣（LeetCode）
  * 链接：https://leetcode-cn.com/problems/longest-palindromic-substring
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
@@ -30,21 +30,8 @@ public class Solution {
     public String longestPalindrome(String s) {
 
 
+
         return null;
-    }
-private String a ;
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Solution solution = (Solution) o;
-        return Objects.equals(a, solution.a);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(a);
     }
 
     public static void main(String[] args) {
