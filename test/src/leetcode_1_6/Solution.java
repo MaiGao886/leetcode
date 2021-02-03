@@ -2,20 +2,17 @@ package leetcode_1_6;
 
 public class Solution {
     public String convert(String s, int numRows) {
+        //按行循环，创建一个新的char[s.length()],循环每行将结果写入数组
+        //每个Z之间有步长，相当于将字符串分组，每组长度为2*(numRows-1)
         int len = s.length();
         if (numRows > len) {
             return s;
         }
-        StringBuilder builder = new StringBuilder();
-        int numGroups = Math.floorDiv(len, 2 * numRows - 2);
-        int numCols = numRows - 1;
-        for (int i = 0; i < numGroups; i++) {
-            for (int j = 0; j < 2 * numRows - 2; j++) {
-                if (len > 2 * i * (numRows - 1) + (j / numRows) + (j % numRows)) {
+        char[] chars = new char[len];
+        int groupLen = 2 * (numRows - 1);
+        for (int i = 0; i < numRows; i++) {
 
 
-                }
-            }
         }
 
 
