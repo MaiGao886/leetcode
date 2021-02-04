@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Solution {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        int reverse = solution.reverse(-19999999);
+        int reverse = solution.reverse2(-1999999999);
         System.out.println(reverse);
         System.out.println(Integer.MIN_VALUE);
     }
@@ -34,5 +34,14 @@ public class Solution {
             a = 0;
         }
         return (int) a;
+    }
+
+    public int reverse2(int x) {
+        long n = 0;
+        while(x != 0) {
+            n = n*10 + x%10;
+            x = x/10;
+        }
+        return (int)n==n? (int)n:0;
     }
 }
